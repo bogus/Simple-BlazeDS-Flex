@@ -1,0 +1,14 @@
+This is a sample project for Spring BlazeDS / JPA / Hibernate and Flex. This sample code is based on the codes of these people. Thank you.
+
+http://sebastien-arbogast.com/2008/04/10/flex-spring-and-blazeds-the-full-stack/
+http://code.google.com/p/flex-blazeds-spring-archetype/
+
+In order to build and run this code you need Apache-Maven.
+
+In order to build code run this command
+
+> mvn clean install
+
+Then there will be a war file under blazeds-flex-server/target/ directory. Take this war file and deploy to any servlet container like Apache Tomcat. 
+
+Enjoy!

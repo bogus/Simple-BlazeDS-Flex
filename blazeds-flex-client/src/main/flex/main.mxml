@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	xmlns:view="com.medratech.view.*"
+	preinitialize="initRemoteConnection()">
+	<mx:Script>
+        <![CDATA[
+
+        import mx.messaging.ChannelSet;
+        import mx.messaging.channels.AMFChannel;
+        import mx.rpc.AsyncResponder;
+        import mx.rpc.AsyncToken;
+        import mx.rpc.events.FaultEvent;
+        import mx.rpc.events.ResultEvent;
+
+        private var _channelSet:ChannelSet;
+        public function get channelSet():ChannelSet {
+            return _channelSet;
+        }
+
+        private function initRemoteConnection():void {
+            var channel:AMFChannel = new AMFChannel("channel-amf",
+                    "/blazeds-flex-server/messagebroker/amf");
+            _channelSet = new ChannelSet();
+            _channelSet.addChannel(channel);
+        } 
+        ]]>
+    </mx:Script>
+	<view:Users />
+</mx:Application>
