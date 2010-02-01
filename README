@@ -3,6 +3,8 @@ This is a sample project for Spring BlazeDS / JPA / Hibernate and Flex. This sam
 http://sebastien-arbogast.com/2008/04/10/flex-spring-and-blazeds-the-full-stack/
 http://code.google.com/p/flex-blazeds-spring-archetype/
 
+First configure your local MySQL server. Make root user's password empty or change password from blazeds-flex-server/src/main/webapp/WEB-INF/applicationContext.xml.
+
 In order to build and run this code you need Apache-Maven.
 
 In order to build code run this command
